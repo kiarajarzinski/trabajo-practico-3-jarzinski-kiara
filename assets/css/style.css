@@ -1,59 +1,65 @@
 body {
-  background-color:#1e1e1e;
-  color: white; 
-  font-family: sans-serif;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  color: #FFA500; 
-  margin-top: 20px;
-  margin-bottom: 30px;
+.character-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    height: 100%;
 }
 
-#searchButton {
-  background-color: #FFA500;
-  border: none;
-  color: black;
-  font-weight: bold;
-  border-radius: 0.5rem;
+.character-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-#searchButton:hover {
-  background-color: #FFD700; 
+.character-img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
 }
 
-#characterContainer {
-  margin-top: 30px;
+.card-body {
+    padding: 1.25rem;
 }
 
-.card {
-  background-color: #1e1e1e;
-  border: 2px solid #FFD700;
-  border-radius: 1rem;
-  margin-bottom: 20px;
+.badge {
+    margin-right: 5px;
 }
 
-.card img {
-  height: 300px;
-  object-fit: cover;
+#searchInput {
+    height: 50px;
 }
 
-.card-title {
-  color: #FFD700; 
-  font-weight: bold;
+#searchBtn, #clearBtn {
+    height: 50px;
 }
 
-.card-text {
-  color: #f0f0f0;
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-#errorMessage {
-  color: #FFA500;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
+.character-details p {
+    margin-bottom: 0.5rem;
 }
-#searchInput,
-#searchButton {
-  border-radius: 0.5rem;
+
+.character-details strong {
+    margin-right: 5px;
+}
+.character-card .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.character-card .btn-details {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.character-card .card-text {
+    margin-bottom: 0.5rem;
 }
