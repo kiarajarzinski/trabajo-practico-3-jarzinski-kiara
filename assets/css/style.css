@@ -1,0 +1,59 @@
+body {
+  background-color:#1e1e1e
+  color: white; 
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #FFA500; 
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#searchButton {
+  background-color: #FFA500;
+  border: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+#searchButton:hover {
+  background-color: #FFD700; 
+}
+
+#characterContainer {
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 2px solid #FFD700;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #FFD700; 
+  font-weight: bold;
+}
+
+.card-text {
+  color: #f0f0f0;
+}
+
+#errorMessage {
+  color: #FFA500;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+#searchInput,
+#searchButton {
+  border-radius: 0.5rem;
+}
